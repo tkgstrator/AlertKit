@@ -93,7 +93,7 @@ You can use basic way via `AlertKitAPI` or call via modifier:
 let alertView = AlertAppleMusic17View(title: "Hello", subtitle: nil, icon: .done)
 
 VStack {}
-    .alert(isPresent: $alertPresented, view: alertView)
+    .alert(isPresented: $alertPresented, view: alertView)
 ```
 
 ## Customisation
