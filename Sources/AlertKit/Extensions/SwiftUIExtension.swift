@@ -2,7 +2,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 extension View {
-    public func present(isPresented: Binding<Bool>, @ViewBuilder content: @escaping () -> AlertViewProtocol, completion: (()->Void)? = nil) -> some View {
+    public func alert(isPresented: Binding<Bool>, content: @escaping () -> AlertViewProtocol, completion: (()->Void)? = nil) -> some View {
         if isPresented.wrappedValue {
             let wrapperCompletion = {
                 isPresented.wrappedValue = false
